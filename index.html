@@ -34,6 +34,55 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- tailwind customize -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              nav_backGround: "#F9F7F3",
+              text_primary: "#111111B3",
+              primary_btn_bg: "#B4F461",
+            },
+            fontFamily: {
+              lexend: "Lexend",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body class="lexend-font"></body>
+  <body class="lexend">
+    <header>
+      <!-- navBar START -->
+      <div class="bg-nav_backGround">
+        <nav
+          class="w-4/5 mx-auto flex items-center flex-col py-4 md:flex-row md:justify-between"
+        >
+          <button>
+            <a
+              href="./blog.html"
+              class="px-2 py-1 bg-primary_btn_bg text-black border-none md:px-4 md:py-2 md:text-xl rounded-xl font-bold"
+              >Blog</a
+            >
+          </button>
+          <div class="flex gap-4 items-center">
+            <img
+              src="./assets/logo.png"
+              alt=""
+              class="w-8 h-8 md:w-12 md:h-12"
+            />
+            <h3 class="md:text-xl font-bold text-black">FLOOD DONATE</h3>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="./assets/coin.png" alt="" class="w-5 h-5 md:w-7 md:h-7" />
+            <p class="font-semibold md:text-xl text-text_primary">20000</p>
+            <p class="font-semibold md:text-xl text-text_primary">BDT</p>
+          </div>
+        </nav>
+      </div>
+      <!-- navBar END -->
+    </header>
+    <main></main>
+  </body>
 </html>
