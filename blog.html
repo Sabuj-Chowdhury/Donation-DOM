@@ -34,6 +34,158 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- tailwind customize -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              nav_backGround: "#F9F7F3",
+              text_primary: "#111111B3",
+              primary_btn_bg: "#B4F461",
+              secondary_btn_bg: "#1111110D",
+              divider: "#11111128",
+            },
+            fontFamily: {
+              lexend: "Lexend",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body class="lexend-font"></body>
+  <body class="lexend">
+    <header>
+      <div class="bg-nav_backGround">
+        <nav
+          class="w-4/5 flex md:flex-row flex-col items-center mx-auto md:justify-between py-4"
+        >
+          <div>
+            <a
+              href="index.html"
+              class="md:px-4 md:py-2 px-2 py-1 md:text-xl rounded-xl font-bold bg-primary_btn_bg text-black border-none"
+              >Home</a
+            >
+          </div>
+          <div class="flex gap-4 items-center">
+            <img
+              src="./assets/logo.png"
+              alt=""
+              class="w-8 h-8 md:w-12 md:h-12"
+            />
+            <h3 class="md:text-xl font-bold text-black">DONATE BANGLADESH</h3>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="./assets/coin.png" alt="" class="w-5 h-5 md:w-8 md:h-8" />
+            <p
+              id="my-balance"
+              class="font-semibold md:text-xl text-text_primary"
+            >
+              20000
+            </p>
+            <p class="font-semibold md:text-xl text-text_primary">BDT</p>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="w-4/5 mx-auto mt-10">
+      <div class="flex gap-2 justify-center md:justify-start">
+        <h3 class="font-extrabold text-3xl text-black">Important FAQ</h3>
+        <i class="fa fa-question-circle text-3xl" aria-hidden="true"></i>
+      </div>
+
+      <div class="mt-5">
+        <div class="join join-vertical w-full">
+          <!-- Accordion - 1 -->
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              1. What is the DOM in JavaScript?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Answer: The DOM (Document Object Model) is a programming
+                interface for web documents. It represents the structure of a
+                webpage as a tree of objects, allowing JavaScript to manipulate,
+                access, and update the content, structure, and styling of the
+                webpage dynamically.
+              </p>
+            </div>
+          </div>
+          <!-- Accordion - 2 -->
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              2. How do you select an HTML element using JavaScript?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Answer: You can select an HTML element using methods like
+                document.getElementById(), document.querySelector(), or
+                document.getElementsByClassName(). For example:
+              </p>
+              <!-- code -->
+              <div class="mockup-code">
+                <pre>
+                    <code>const element = document.getElementById("myElement");</code>
+                    <code>const element = document.querySelector(".myClass");</code>
+                  </pre>
+              </div>
+            </div>
+          </div>
+          <!-- Accordion - 3 -->
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              3. How do you add an event listener to an element in JavaScript?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Answer: To add an event listener to an element, you can use the
+                addEventListener() method. For example:
+              </p>
+              <!-- code -->
+              <div class="mockup-code">
+                <pre
+                  data-prefix="1"
+                ><code>const button = document.getElementById("myButton");</code></pre>
+                <pre
+                  data-prefix="2"
+                ><code>button.addEventListener("click", function() {</code></pre>
+                <pre data-prefix="3"><code>alert("Button clicked!");
+                    });</code></pre>
+              </div>
+            </div>
+          </div>
+          <!-- Accordion - 4 -->
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              4. How do you create and append an HTML element dynamically in
+              JavaScript?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Answer: You can create a new HTML element using
+                document.createElement() and append it to a parent element using
+                appendChild(). For example:
+              </p>
+              <!-- code -->
+              <div class="mockup-code">
+                <pre
+                  data-prefix="1"
+                ><code>const newElement = document.createElement("div");</code></pre>
+                <pre
+                  data-prefix="2"
+                ><code>newElement.textContent = "This is a new element";</code></pre>
+                <pre
+                  data-prefix="3"
+                ><code>document.body.appendChild(newElement);</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
