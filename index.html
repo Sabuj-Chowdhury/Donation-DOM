@@ -62,12 +62,11 @@
         <nav
           class="w-4/5 mx-auto flex items-center flex-col py-4 md:flex-row md:justify-between"
         >
-          <button>
-            <a
-              href="./blog.html"
-              class="px-3 py-2 bg-primary_btn_bg text-black border-none md:px-4 md:py-2 md:text-xl rounded-xl font-bold"
-              >Blog</a
-            >
+          <button
+            id="blog-btn"
+            class="px-3 py-2 bg-primary_btn_bg text-black border-none md:px-4 md:py-2 md:text-xl rounded-xl font-bold"
+          >
+            Blog
           </button>
           <div class="flex gap-4 items-center">
             <img
@@ -79,7 +78,12 @@
           </div>
           <div class="flex items-center gap-2">
             <img src="./assets/coin.png" alt="" class="w-5 h-5 md:w-7 md:h-7" />
-            <p class="font-semibold md:text-xl text-text_primary">20000</p>
+            <p
+              id="available-balance"
+              class="font-semibold md:text-xl text-text_primary"
+            >
+              20000
+            </p>
             <p class="font-semibold md:text-xl text-text_primary">BDT</p>
           </div>
         </nav>
@@ -91,6 +95,7 @@
       >
         <div>
           <button
+            id="donation-menu-btn"
             class="text-black font-bold bg-primary_btn_bg rounded-xl w-28 h-10 md:w-40 md:h-14 text-base md:text-xl"
           >
             Donation
@@ -98,6 +103,7 @@
         </div>
         <div>
           <button
+            id="history-menu-btn"
             class="border-2 border-text_primary text-text_primary font-bold text-base md:text-xl rounded-xl w-28 h-10 md:w-40 md:h-14"
           >
             History
@@ -108,7 +114,7 @@
     </header>
     <main class="mt-5 mb-10">
       <!-- Donation Card Container Start -->
-      <section class="w-4/5 mx-auto space-y-4">
+      <section id="donation-section" class="w-4/5 mx-auto space-y-4">
         <!-- cart-1 START -->
         <div class="flex flex-col gap-4 border p-4 rounded-xl md:flex-row">
           <!-- Image Container -->
@@ -117,17 +123,25 @@
           </div>
           <!-- Text ConTainer -->
           <div class="w-full md:w-2/4 space-y-5">
-            <!-- button -->
+            <!-- button -amount -->
             <button
               class="flex items-center gap-2 rounded-lg px-4 py-2 bg-secondary_btn_bg"
             >
               <img src="./assets/coin.png" alt="" />
-              <p class="font-semibold text-xl text-text_primary">50000</p>
+              <p
+                id="cart-one-balance"
+                class="font-semibold text-xl text-text_primary"
+              >
+                50000
+              </p>
               <p class="font-semibold text-xl text-text_primary">BDT</p>
             </button>
 
             <div class="space-y-2">
-              <h3 class="md:text-xl font-extrabold text-black">
+              <h3
+                id="cart-one-title"
+                class="md:text-xl font-extrabold text-black"
+              >
                 Donate for Flood at Noakhali, Bangladesh
               </h3>
               <p class="md:text-xl text-sm">
@@ -142,11 +156,14 @@
 
             <div class="flex flex-col gap-5">
               <input
+                id="cart-one-input"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full"
               />
+              <!-- donate button -->
               <button
+                id="cart-one-btn"
                 class="text-xl font-bold text-black bg-primary_btn_bg rounded-lg py-2"
               >
                 Donate Now
@@ -169,12 +186,20 @@
               class="flex items-center gap-2 rounded-lg px-4 py-2 bg-secondary_btn_bg"
             >
               <img src="./assets/coin.png" alt="" />
-              <p class="font-semibold text-xl text-text_primary">60000</p>
+              <p
+                id="cart-two-balance"
+                class="font-semibold text-xl text-text_primary"
+              >
+                60000
+              </p>
               <p class="font-semibold text-xl text-text_primary">BDT</p>
             </button>
 
             <div class="space-y-2">
-              <h3 class="md:text-xl font-extrabold text-black">
+              <h3
+                id="cart-two-title"
+                class="md:text-xl font-extrabold text-black"
+              >
                 Donate for Flood Relief in Feni,Bangladesh
               </h3>
               <p class="md:text-xl text-sm">
@@ -191,11 +216,13 @@
 
             <div class="flex flex-col gap-5">
               <input
+                id="cart-two-input"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full"
               />
               <button
+                id="cart-two-btn"
                 class="text-xl font-bold text-black bg-primary_btn_bg rounded-lg py-2"
               >
                 Donate Now
@@ -218,12 +245,20 @@
               class="flex items-center gap-2 rounded-lg px-4 py-2 bg-secondary_btn_bg"
             >
               <img src="./assets/coin.png" alt="" />
-              <p class="font-semibold text-xl text-text_primary">80000</p>
+              <p
+                id="cart-three-balance"
+                class="font-semibold text-xl text-text_primary"
+              >
+                80000
+              </p>
               <p class="font-semibold text-xl text-text_primary">BDT</p>
             </button>
 
             <div class="space-y-2">
-              <h3 class="md:text-xl font-extrabold text-black">
+              <h3
+                id="cart-three-title"
+                class="md:text-xl font-extrabold text-black"
+              >
                 Aid for Injured in the Quota Movement
               </h3>
               <p class="md:text-xl text-sm">
@@ -241,11 +276,14 @@
 
             <div class="flex flex-col gap-5">
               <input
+                id="cart-three-input"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full"
               />
+              <!-- donate button -->
               <button
+                id="cart-three-btn"
                 class="text-xl font-bold text-black bg-primary_btn_bg rounded-lg py-2"
               >
                 Donate Now
@@ -256,6 +294,29 @@
         <!-- cart-3 END -->
       </section>
       <!-- Donation Card Container END -->
+
+      <!-- history section START -->
+      <section id="history-section" class="mt-10 w-4/5 mx-auto hidden">
+        <div id="history-div" class="flex flex-col gap-4"></div>
+      </section>
+      <!-- history section END -->
     </main>
+    <!-- modal -->
+    <dialog id="custom_modal" class="modal">
+      <div class="modal-box flex gap-2 flex-col items-center text-center">
+        <h3 class="text-3xl font-bold text-black">Congrates!</h3>
+        <img src="./assets/coin.png" alt="" class="w-10 h-10" />
+        <p class="py-4">You have donated for humankind</p>
+        <h3 class="text-xl text-black font-bold">Successfully</h3>
+        <div class="modal-action justify-center">
+          <form method="dialog">
+            <button class="btn">Close Confirmation</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+    <!-- JS script -->
+    <script src="./js/shared.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
