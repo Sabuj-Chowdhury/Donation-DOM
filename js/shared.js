@@ -1,5 +1,12 @@
 function getInputValue(id) {
-  return parseFloat(document.getElementById(id).value);
+  const input = document.getElementById(id).value.trim();
+
+  // Check if input is a number and is not empty
+  if (isNaN(input) || input === "") {
+    return null; // Invalid number
+  }
+  // Return the number if valid
+  return parseFloat(input);
 }
 
 function getBalance(id) {
